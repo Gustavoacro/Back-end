@@ -1,8 +1,17 @@
-from time import sleep
-nome = str(input('Qual o seu nome? '))
+import cv2
+from deepface import DeepFace
 
-print('Analisando nome...')
-sleep(3)
+#Inicializa o detector de faces do OpenCV
+face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
-if nome == "Nicole":
-    print(f'Olá, {nome}! Fiquei sabendo que seu apelido é Cocó, OK e Carioca.')
+#Mapeamento de emoções em inglês para português
+emotion_translation = {
+
+'happy': 'feliz',
+'sad': 'triste' 
+
+}
+
+#inicia a câmera (pode ser necessário ajustar o número do dispositivo)
+cap = cv2.VideoCapture(2)
+print(cap) 

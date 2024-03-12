@@ -5,5 +5,5 @@ if v1 > v2:
     print(f'O {v1} é maior que {v2}.')
 elif v2 > v1:
     print(f'O {v2} é maior que {v1}.')
-elif v1 == v2:
+else:
     print(f'O {v1} é igual ao {v2}.')
