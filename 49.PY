@@ -1,3 +1,3 @@
+valor = int(input('Insira o valor da tabuada: '))
 for num in range(1,11):
-    valor = 2
-    print(f'{valor} x {num} = {valor * num}')
+    print(f'{valor} x {num} = {valor * num}') 

@@ -1,6 +1,6 @@
 from time import sleep
 
-for temp in range(0,11):
+for temp in range(10, -1, -1):
     print(temp)
-    sleep(1)
+    sleep(0.75)
 print('FELIZ ANO NOVO')

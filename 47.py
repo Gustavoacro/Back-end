@@ -1,6 +1,5 @@
-for pares in range(1, 50):
-    if pares % 2 == 0:
-        print(pares)
-    #pares += pares
-    #print(pares)
+for pares in range(2, 51, 2):
+#if pares % 2 == 0:
+    print(pares)
+   
 
